@@ -1,0 +1,379 @@
+<!-- /sections/index-instagram.liquid -->
+<div class="{{ section.settings.display }}">
+  <div class="grid-container">
+    <div class="box border-none" {% if section.settings.option == '1' %}data-instagram-param='{"userId": "{{ section.settings.user_id }}", "clientId": "{{ section.settings.client_id }}", "accessToken": "{{ section.settings.access_token }}", "limit": "{{ section.settings.limit }}", "slidable": "{{ section.settings.slidable }}"}' data-instagram {% endif %}>
+      {%- if section.settings.title != blank or section.settings.sub_title != blank -%}
+        <div class="box-divider grid-x">
+          {%- if section.settings.title != blank -%}
+            <h2 class="box-title width-100">{{ section.settings.title }}</h2>
+          {%- endif -%}          
+        </div>
+      {%- endif -%}
+      <div class="box-content">
+        {% if section.settings.option == '1' %}
+          <div class="instagram-api"> 
+            <div class="instafeed-wraper grid-x small-up-{{ section.settings.column_small }} medium-up-{{ section.settings.column_medium }} large-up-{{ section.settings.column_large }} xlarge-up-{{ section.settings.column_xlarge }} xxlarge-up-{{ section.settings.column_xxlarge }} xxxlarge-up-{{ section.settings.column_xxxlarge }}" data-instagram-target>
+            </div>
+          </div>
+        {% else %}
+          {%- if section.blocks.size > 0 -%}
+          <div class="instagram-photo">            
+            <div class="instagram-wrapper grid-x grid-margin-x small-up-{{ section.settings.column_small }} medium-up-{{ section.settings.column_medium }} large-up-{{ section.settings.column_large }} xlarge-up-{{ section.settings.column_xlarge }} xxlarge-up-{{ section.settings.column_xxlarge }} xxxlarge-up-{{ section.settings.column_xxxlarge }}">
+              {%- for block in section.blocks -%}
+              <div class="photo-element cell">
+                <a href="{{ block.settings.image }}"><img src="{{ block.settings.image }}/media/?size=l" alt=""/></a>                        
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{%- include 'index-instagram-template' -%}
+{% schema %}
+{
+  "name": "Instagram",
+  "class": "index-instafeed",
+  "settings": [
+    {
+      "type": "select",
+      "id": "display",
+      "label": "Display on",
+      "options": [
+        {
+          "value": "",
+          "label": "Desktop & Mobile"
+        },
+        {
+          "value": "show-for-large",
+          "label": "Desktop only"
+        },
+        {
+          "value": "hide-for-large",
+          "label": "Mobile only"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "header",
+      "content": "Title"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Instagram title"
+    },
+	{
+      "type": "select",
+      "id": "option",
+      "label": "Instagram photos get method",
+      "default": "1",
+      "options": [
+        {
+          "value": "1",
+          "label": "by API Access Token"
+        },
+        {
+          "value": "2",
+          "label": "by Photo URL"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Instagram API Access Token",
+	  "info":"will get auto photos and sort by Date."
+    }, 
+    {
+      "type": "text",
+      "id": "access_token",
+      "label": "API Access Token",
+      "info": "Get [here](http://instagram.pixelunion.net)"
+    },
+	{
+      "type": "number",
+      "id": "user_id",
+      "label": "User ID",
+      "info": "the first string of API Access Token"
+    },
+    {
+      "type": "number",
+      "id": "limit",
+      "label": "Number of images",
+      "info": "Maximum number of Images to add. Max of 60."
+    },
+	{
+      "type": "header",
+      "content": "Instagram Photo Urls",
+	  "info":"input the photo url into block"
+    },
+    {
+      "type": "header",
+      "content": "Grid settings"
+    },
+    {
+      "type": "header",
+      "content": "Responsive columns"
+    },
+    {
+      "type": "select",
+      "id": "column_small",
+      "label": "Items per row",
+      "info": "For small screen (0px - 550px)",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "select",
+      "id": "column_medium",
+      "label": "Items per row",
+      "info": "For medium screen (551px - 800px)",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "select",
+      "id": "column_large",
+      "label": "Items per row",
+      "info": "For large screen (801px - 1260px)",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "7",
+          "label": "7"
+        },
+        {
+          "value": "8",
+          "label": "8"
+        }
+      ],
+      "default": "3"
+    },
+    {
+      "type": "select",
+      "id": "column_xlarge",
+      "label": "Items per row",
+      "info": "For xlarge screen (1261px - 1440px)",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "7",
+          "label": "7"
+        },
+        {
+          "value": "8",
+          "label": "8"
+        }
+      ],
+      "default": "4"
+    },
+    {
+      "type": "select",
+      "id": "column_xxlarge",
+      "label": "Items per row",
+      "info": "For xxlarge screen (1441px - 1680px)",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "7",
+          "label": "7"
+        },
+        {
+          "value": "8",
+          "label": "8"
+        }
+      ],
+      "default": "4"
+    },
+    {
+      "type": "select",
+      "id": "column_xxxlarge",
+      "label": "Items per row",
+      "info": "For xxxlarge screen (1681px - infinity)",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        },
+        {
+          "value": "5",
+          "label": "5"
+        },
+        {
+          "value": "6",
+          "label": "6"
+        },
+        {
+          "value": "7",
+          "label": "7"
+        },
+        {
+          "value": "8",
+          "label": "8"
+        },
+        {
+          "value": "9",
+          "label": "9"
+        },
+        {
+          "value": "10",
+          "label": "10"
+        },
+        {
+          "value": "11",
+          "label": "11"
+        },
+        {
+          "value": "12",
+          "label": "12"
+        }
+      ],
+      "default": "4"
+    }    
+  ],
+  "blocks": [
+    {
+      "type": "photo",
+      "name": "Photo",
+      "settings": [
+        {
+          "type": "text",
+          "id": "image",
+          "label": "Image",
+		  "default":"https:\/\/www.instagram.com\/p\/Bn0j_G0D4AF",
+		  "info":"input the Instagram Photo url"
+        }        
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Instagram",
+      "category": "Image"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,255 @@
+<!-- /snippets/theme-footer.liquid -->
+<div class="footer">
+  <div class="grid-container"> 
+    <div class="grid-x grid-margin-x"> 
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'newsletter' -%}
+          <div class="cell large-{{ block.settings.grid }} {{ block.settings.display }}">
+            <div class="grid-x">
+              <div class="cell medium-6  large-12">
+                <div class="footer-newsletter">
+                    {%- if block.settings.title != blank -%}
+                      <h3 class="footer-newsletter-title">
+                        {{ block.settings.title }}
+                      </h3>
+                    {%- endif -%}
+                    <div class="footer-newsletter-content">
+                      <form action="{{ block.settings.newsletter_action }}" method="post" target="_blank">  
+                        <div class="grid-x footer-newsletter-wrap"> 
+                          <div class="cell large-auto">
+                            <input type="email" class="footer-newsletter-field" name="EMAIL" placeholder="{{ block.settings.newsletter_placeholder }}"/>
+                          </div>
+                          <div class="cell large-shrink">
+                            <button type="submit" class="button primary footer-newsletter-button display-block width-100" name="subsrcibe">
+                              {{ block.settings.newsletter_actiontext }}
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+              </div>
+              <div class="cell medium-6  large-12">
+                <div class="footer-social-media">
+                  <div class="footer-social-media-wrap">
+                    {%- if block.settings.title2 != blank -%}
+                      <h3 class="footer-title footer-social-media-title">
+                        {{ block.settings.title2 }}
+                      </h3>
+                    {%- endif -%}
+                    {%- assign class_prefix = 'footer-' -%}
+                    {%- include 'social-media' -%}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {%- elsif block.type == 'link1' -%}
+          {%- if block.settings.display == "" or block.settings.display == "show-for-large" -%}
+            <div class="cell large-{{ block.settings.grid }} show-for-large">
+              <div class="link-element grid-x grid-margin-x">
+                {% if block.settings.linklist1 != '' %}
+                <div class="footer-linklist-1 cell small-12 medium-6 large-4 xlarge-4 xxlarge-4 xxxlarge-4">
+                  <h3 class="footer-title">
+                    {{ linklists[block.settings.linklist1].title }}
+                  </h3>
+                  <ul class="no-bullet linklist-content">
+                    {%- for link in linklists[block.settings.linklist1].links -%}
+                      <li>
+                        <a href="{{ link.url }}">{{ link.title | escape }}</a>           
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+                {% endif %}
+                {% if block.settings.linklist2 != '' %}
+                <div class="footer-linklist-2 cell small-12 medium-6 large-4 xlarge-4 xxlarge-4 xxxlarge-4">
+                  <h3 class="footer-title">
+                    {{ linklists[block.settings.linklist2].title }}
+                  </h3>
+                  <ul class="no-bullet linklist-content">
+                    {%- for link in linklists[block.settings.linklist2].links -%}
+                      <li>
+                        <a href="{{ link.url }}">{{ link.title | escape }}</a>           
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+                {% endif %}
+                {% if block.settings.linklist3 != '' %}
+                <div class="footer-linklist-3 cell small-12 medium-6 large-4 xlarge-4 xxlarge-4 xxxlarge-4">
+                  <h3 class="footer-title">
+                    {{ linklists[block.settings.linklist3].title }}
+                  </h3>
+                  <ul class="no-bullet linklist-content">
+                    {%- for link in linklists[block.settings.linklist3].links -%}
+                      <li>
+                        <a href="{{ link.url }}">{{ link.title | escape }}</a>           
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+          {%- endif -%}
+          {%- if block.settings.display == "" or block.settings.display == "hide-for-large" -%}
+            <div class="cell large-{{ block.settings.grid }} hide-for-large">
+              <div class="link-element">
+                {% if block.settings.linklist1 != '' %}
+                  <div class="accordion footer-linklist-1 footer-linklist-accordion" data-allow-all-closed="true" data-accordion>
+                    <div class="accordion-item" data-accordion-item>
+                      <a class="accordion-title footer-linklist-accordion-title">
+                        <span>{{ linklists[block.settings.linklist1].title }}</span>
+                        <svg class="svg-icon accordion-item-state accordion-item-state-close">
+                          <use xlink:href="#icon-plus"></use>
+                        </svg>
+                        <svg class="svg-icon accordion-item-state accordion-item-state-open">
+                          <use xlink:href="#icon-minus"></use>
+                        </svg>
+                      </a>
+                      <div class="accordion-content padding-vertical-0" data-tab-content>
+                        <ul class="no-bullet footer-linklist-accordion-content margin-0">
+                          {%- for link in linklists[block.settings.linklist1].links -%}
+                            <li class="footer-linklist-accordion-item">
+                              <a href="{{ link.url }}">{{ link.title | escape }}</a>           
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+                {% if block.settings.linklist2 != '' %}
+                  <div class="accordion footer-linklist-2 footer-linklist-accordion" data-allow-all-closed="true" data-accordion>
+                    <div class="accordion-item" data-accordion-item>
+                      <a class="accordion-title footer-linklist-accordion-title">
+                        <span>{{ linklists[block.settings.linklist2].title }}</span>
+                        <svg class="svg-icon accordion-item-state accordion-item-state-close">
+                          <use xlink:href="#icon-plus"></use>
+                        </svg>
+                        <svg class="svg-icon accordion-item-state accordion-item-state-open">
+                          <use xlink:href="#icon-minus"></use>
+                        </svg>
+                      </a>
+                      <div class="accordion-content padding-vertical-0" data-tab-content>
+                        <ul class="no-bullet footer-linklist-accordion-content margin-0">
+                          {%- for link in linklists[block.settings.linklist2].links -%}
+                            <li class="footer-linklist-accordion-item">
+                              <a href="{{ link.url }}">{{ link.title | escape }}</a>           
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+                {% if block.settings.linklist3 != '' %}
+                  <div class="accordion footer-linklist-3 footer-linklist-accordion" data-allow-all-closed="true" data-accordion>
+                    <div class="accordion-item" data-accordion-item>
+                      <a class="accordion-title footer-linklist-accordion-title">
+                        <span>{{ linklists[block.settings.linklist3].title }}</span>
+                        <svg class="svg-icon accordion-item-state accordion-item-state-close">
+                          <use xlink:href="#icon-plus"></use>
+                        </svg>
+                        <svg class="svg-icon accordion-item-state accordion-item-state-open">
+                          <use xlink:href="#icon-minus"></use>
+                        </svg>
+                      </a>
+                      <div class="accordion-content padding-vertical-0" data-tab-content>
+                        <ul class="no-bullet footer-linklist-accordion-content margin-0">
+                          {%- for link in linklists[block.settings.linklist3].links -%}
+                            <li class="footer-linklist-accordion-item">
+                              <a href="{{ link.url }}">{{ link.title | escape }}</a>           
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {%- endif -%}                    
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-12 medium-12 large-6 xlarge-6 xxlarge-6 xxxlarge-6">
+          {%- for block in section.blocks -%}
+          {%- if block.type == 'payment' -%}
+            <div class="cell large-{{ block.settings.grid }} {{ block.settings.display }}">
+              <div class="footer-payment">
+                <div class="footer-payment-content">
+                  <div class="footer-payment-container flex-container">
+                    {%- if block.settings.payment_1 != blank -%}
+                      <div class="footer-payment-cell">
+                        <img src="{{ 'icon-loader-clock.svg' | asset_url }}" data-src="{{ block.settings.payment_1 |  img_url: 'x20' }}" class="footer-payment-logo lazyload" alt="{{ block.settings.payment_1.alt }}"/>
+                      </div>
+                    {%- endif -%}
+                    {%- if block.settings.payment_2 != blank -%}
+                      <div class="footer-payment-cell">
+                        <img src="{{ 'icon-loader-clock.svg' | asset_url }}" data-src="{{ block.settings.payment_2 |  img_url: 'x20' }}" class="footer-payment-logo lazyload" alt="{{ block.settings.payment_2.alt }}"/>
+                      </div>
+                    {%- endif -%}
+                    {%- if block.settings.payment_3 != blank -%}
+                      <div class="footer-payment-cell">
+                        <img src="{{ 'icon-loader-clock.svg' | asset_url }}" data-src="{{ block.settings.payment_3 |  img_url: 'x20' }}" class="footer-payment-logo lazyload" alt="{{ block.settings.payment_3.alt }}"/>
+                      </div>
+                    {%- endif -%}
+                    {%- if block.settings.payment_4 != blank -%}
+                      <div class="footer-payment-cell">
+                        <img src="{{ 'icon-loader-clock.svg' | asset_url }}" data-src="{{ block.settings.payment_4 |  img_url: 'x20' }}" class="footer-payment-logo lazyload" alt="{{ block.settings.payment_4.alt }}"/>
+                      </div>
+                    {%- endif -%}
+                    {%- if block.settings.payment_5 != blank -%}
+                      <div class="footer-payment-cell">
+                        <img src="{{ 'icon-loader-clock.svg' | asset_url }}" data-src="{{ block.settings.payment_5 |  img_url: 'x20' }}" class="footer-payment-logo lazyload" alt="{{ block.settings.payment_5.alt }}"/>
+                      </div>
+                    {%- endif -%}
+                    {%- if block.settings.security_1 != blank or block.settings.security_2 != blank or block.settings.security_1 != blank -%}
+                    <div class="footer-payment-security">
+                      <div class="footer-payment-security-container flex-container align-middle">
+                        {%- if block.settings.security_1 != blank -%}
+                          <div class="footer-payment-security-cell">
+                            <img src="{{ 'icon-loader-clock.svg' | asset_url }}" data-src="{{ block.settings.security_1 |  img_url: 'x60' }}" class="footer-payment-security-logo lazyload" alt="{{ block.settings.security_1.alt }}"/>
+                          </div>
+                        {%- endif -%}
+                        {%- if block.settings.security_2 != blank -%}
+                          <div class="footer-payment-security-cell">
+                            <img src="{{ 'icon-loader-clock.svg' | asset_url }}" data-src="{{ block.settings.security_2 |  img_url: 'x60' }}" class="footer-payment-security-logo lazyload" alt="{{ block.settings.security_2.alt }}"/>
+                          </div>
+                        {%- endif -%}
+                        {%- if block.settings.security_3 != blank -%}
+                          <div class="footer-payment-security-cell">
+                            <img src="{{ 'icon-loader-clock.svg' | asset_url }}" data-src="{{ block.settings.security_3 |  img_url: 'x60' }}" class="footer-payment-security-logo lazyload" alt="{{ block.settings.security_3.alt }}"/>
+                          </div>
+                        {%- endif -%}
+                      </div>
+                    </div>
+                  {%- endif -%}
+                    {%- assign payment_icons_available = 'amazon_payments,american_express,apple_pay,bitcoin,cirrus,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,jcb,klarna,litecoin,maestro,master,paypal,stripe,shopify_pay,visa' | split: ',' -%}
+                    {%- assign payments = block.settings.payments | remove: ' ' | split: ',' -%}
+                    {%- for payment in payments -%}
+                      {% if payment_icons_available contains payment %}
+                        <div class="footer-payment-cell">
+                          <img src="{{ 'icon-loader-clock.svg' | asset_url }}" data-src="{{ payment | payment_type_img_url }}"  class="footer-payment-logo lazyload" alt="{{ payment }}" />
+                        </div>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </div>
+                </div>
+              </div>
+            </div> 
+            {% endif %}
+          {% endfor %}
+        </div>
+        <div class="cell small-12 medium-12 large-6 xlarge-6 xxlarge-6 xxxlarge-6 copyright">&copy; {{ 'now' | date: "%Y" }} {{ shop.name | link_to: '/' }}
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
