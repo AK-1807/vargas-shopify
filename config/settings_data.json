@@ -1208,7 +1208,7 @@
       "intro_TJRwYr": {
         "type": "intro",
         "settings": {
-          "title": "Custom Intro Section",
+          "title": "Customizable Intro Section",
           "subtitle": "Type subtitle here",
           "blurb": "I am a custom created section"
         }
