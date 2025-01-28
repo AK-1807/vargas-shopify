@@ -42,15 +42,6 @@
     <div class="desktop-header-content">
       <div class="grid-x grid-margin-x">
         <div class="cell small-4 medium-4 large-4 xlarge-4 xxlarge-4 xxxlarge-4">
-          <div class="flex-container width-100">
-            <div>
-              {%- if section.settings.link_list != empty and linklists[section.settings.link_list] != empty -%}
-                {%- include 'theme-header-menu', config: section.settings, blocks: section.blocks, menu: linklists[section.settings.link_list] -%}
-              {%- endif -%}
-            </div>
-          </div>
-        </div>
-        <div class="cell small-4 medium-4 large-4 xlarge-4 xxlarge-4 xxxlarge-4">
           <div class="desktop-header-logo flex-container align-center">
             {%- capture logo -%}
               {%- if section.settings.logo -%}
@@ -65,7 +56,8 @@
             {%- endcapture -%}
             {%- if template.name == 'index' -%}
               <h1 itemscope itemtype="http://schema.org/Organization" class="margin-0">
-                {{ logo }}
+                VARGASHVAC
+                {% comment %} {{ logo }} {% endcomment %}
               </h1>
             {%- else -%}
               <div itemscope itemtype="http://schema.org/Organization">
@@ -73,7 +65,16 @@
               </div>
             {%- endif -%}
           </div>
-        </div>        
+        </div>
+        <div class="cell small-4 medium-4 large-4 xlarge-4 xxlarge-4 xxxlarge-4">
+          <div class="flex-container width-100">
+            <div>
+              {%- if section.settings.link_list != empty and linklists[section.settings.link_list] != empty -%}
+                {%- include 'theme-header-menu', config: section.settings, blocks: section.blocks, menu: linklists[section.settings.link_list] -%}
+              {%- endif -%}
+            </div>
+          </div>
+        </div>    
         <div class="cell small-4 medium-4 large-4 xlarge-4 xxlarge-4 xxxlarge-4">
           <div class="flex-container align-right">
             <div class="desktop-header-user-nav desktop-header-search">
