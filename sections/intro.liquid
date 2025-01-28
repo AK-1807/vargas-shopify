@@ -1,0 +1,45 @@
+<!-- /sections/intro.liquid -->
+<section class="intro">
+    <div class="container">
+        <h2>{{ section.settings.title }}</h2>
+        {% if section.settings.subtitle %}
+            <p>{{ section.settings.subtitle }}</p>
+        {% endif %}
+        {% if section.settings.blurb %}
+            <p>{{ section.settings.blurb }}</p>
+        {% endif %}
+    </div>
+  </section>
+  
+
+  {% schema %}
+{
+  "name": "Intro",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section Title",
+      "id": "title",
+      "default": "Custom Intro Section"
+    },
+    {
+        "type": "text",
+        "label": "Section Sub Title",
+        "id": "subtitle",
+        "default": "Type subtitle here"
+    },
+    {
+        "type": "text",
+        "label": "Section Blurb",
+        "id": "blurb",
+        "default": "I am a custom created section"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
