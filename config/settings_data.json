@@ -217,6 +217,7 @@
           "1523935015868": {
             "type": "image",
             "settings": {
+              "background": "shopify://shop_images/banner_slide_1.jpg",
               "link": "shopify://collections/all",
               "entrance_effect": "fadeInUp",
               "exit_effect": "fadeOutUp",
