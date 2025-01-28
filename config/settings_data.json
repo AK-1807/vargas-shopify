@@ -1,7 +1,16 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "general_page_direction": "ltr",
-    "share_image": "shopify:\/\/shop_images\/banner-slider-1_8943bf7b-5a00-41b6-b8fa-792ae22a63aa.jpg",
+    "share_image": "shopify://shop_images/banner-slider-1_8943bf7b-5a00-41b6-b8fa-792ae22a63aa.jpg",
     "general_button_to_top": true,
     "general_search_article": false,
     "general_ajax_cart_notification": true,
@@ -77,25 +86,25 @@
     "product_item_label_hot": "hot",
     "product_item_label_hot_color": "#ffffff",
     "product_item_label_hot_bg": "#f44336",
-    "font_embed": "<link href=\"https:\/\/fonts.googleapis.com\/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i\" rel=\"stylesheet\">",
+    "font_embed": "<link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i\" rel=\"stylesheet\">",
     "font_paragraph": "'Open Sans', sans-serif",
     "font_title": "'Open Sans', sans-serif",
-    "font_desktop_embed": "<link href=\"https:\/\/fonts.googleapis.com\/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i\" rel=\"stylesheet\">",
+    "font_desktop_embed": "<link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i\" rel=\"stylesheet\">",
     "font_desktop_paragraph": "'Open Sans', sans-serif",
     "font_desktop_title": "'Open Sans', sans-serif",
     "social_behance_link": "",
     "social_blogger_link": "",
     "social_dribble_link": "",
-    "social_facebook_link": "https:\/\/twitter.com\/shopify",
+    "social_facebook_link": "https://twitter.com/shopify",
     "social_gplus_link": "",
-    "social_instagram_link": "http:\/\/instagram.com\/shopify",
+    "social_instagram_link": "http://instagram.com/shopify",
     "social_linkedin_link": "",
-    "social_pinterest_link": "https:\/\/pinterest.com\/shopify",
+    "social_pinterest_link": "https://pinterest.com/shopify",
     "social_snapchat_link": "",
     "social_tumblr_link": "",
-    "social_twitter_link": "https:\/\/twitter.com\/shopify",
-    "social_vimeo_link": "http:\/\/instagram.com\/shopify",
-    "social_youtube_link": "https:\/\/www.youtube.com\/shopify",
+    "social_twitter_link": "https://twitter.com/shopify",
+    "social_vimeo_link": "http://instagram.com/shopify",
+    "social_youtube_link": "https://www.youtube.com/shopify",
     "social_custom_1_logo": "",
     "social_custom_1_title": "",
     "social_custom_1_link": "",
@@ -197,8 +206,7 @@
       "theme-menu-mobile": {
         "type": "theme-menu-mobile",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/logo_6ad734f5-dd9a-4819-8453-b3fde3a1b0bd.png",
-          "link_list": "main-menu-mobile",
+          "link_list": "",
           "email": "Contact@Marco.com",
           "phone": "(+10)1900.123.678"
         }
@@ -209,8 +217,7 @@
           "1523935015868": {
             "type": "image",
             "settings": {
-              "background": "shopify:\/\/shop_images\/banner-slider-1.jpg",
-              "link": "shopify:\/\/collections\/all",
+              "link": "shopify://collections/all",
               "entrance_effect": "fadeInUp",
               "exit_effect": "fadeOutUp",
               "title": "",
@@ -231,32 +238,26 @@
               "action_align": "right",
               "action_y": 57.5,
               "action_z": 99,
-              "caption_1": "",
               "caption_1_x": 12.5,
               "caption_1_align": "right",
               "caption_1_y": 51.5,
               "caption_1_z": 99,
-              "caption_2": "",
               "caption_2_x": 0,
               "caption_2_align": "right",
               "caption_2_y": 0,
               "caption_2_z": 0,
-              "caption_3": "",
               "caption_3_x": 0,
               "caption_3_align": "right",
               "caption_3_y": 0,
               "caption_3_z": 0,
-              "caption_4": "",
               "caption_4_x": 0,
               "caption_4_align": "right",
               "caption_4_y": 0,
               "caption_4_z": 0,
-              "caption_5": "",
               "caption_5_x": 0,
               "caption_5_align": "right",
               "caption_5_y": 0,
               "caption_5_z": 0,
-              "caption_6": "",
               "caption_6_x": 0,
               "caption_6_align": "right",
               "caption_6_y": 0,
@@ -266,7 +267,6 @@
           "1524558520445": {
             "type": "image",
             "settings": {
-              "background": "shopify:\/\/shop_images\/banner-slider-2.jpg",
               "link": "",
               "entrance_effect": "fadeInUp",
               "exit_effect": "fadeOutUp",
@@ -288,32 +288,26 @@
               "action_align": "right",
               "action_y": 57.5,
               "action_z": 99,
-              "caption_1": "",
               "caption_1_x": 12.5,
               "caption_1_align": "right",
               "caption_1_y": 51.5,
               "caption_1_z": 99,
-              "caption_2": "",
               "caption_2_x": 0,
               "caption_2_align": "right",
               "caption_2_y": 0,
               "caption_2_z": 9,
-              "caption_3": "",
               "caption_3_x": 0,
               "caption_3_align": "right",
               "caption_3_y": 0,
               "caption_3_z": 9,
-              "caption_4": "",
               "caption_4_x": 0,
               "caption_4_align": "right",
               "caption_4_y": 0,
               "caption_4_z": 9,
-              "caption_5": "",
               "caption_5_x": 0,
               "caption_5_align": "right",
               "caption_5_y": 0,
               "caption_5_z": 9,
-              "caption_6": "",
               "caption_6_x": 0,
               "caption_6_align": "right",
               "caption_6_y": 0,
@@ -323,7 +317,6 @@
           "1539143615753": {
             "type": "image",
             "settings": {
-              "background": "shopify:\/\/shop_images\/banner-slider-3.jpg",
               "link": "",
               "entrance_effect": "bounceIn",
               "exit_effect": "bounceOut",
@@ -345,32 +338,26 @@
               "action_align": "right",
               "action_y": 0,
               "action_z": 9,
-              "caption_1": "",
               "caption_1_x": 0,
               "caption_1_align": "right",
               "caption_1_y": 0,
               "caption_1_z": 9,
-              "caption_2": "",
               "caption_2_x": 0,
               "caption_2_align": "right",
               "caption_2_y": 0,
               "caption_2_z": 9,
-              "caption_3": "",
               "caption_3_x": 0,
               "caption_3_align": "right",
               "caption_3_y": 0,
               "caption_3_z": 9,
-              "caption_4": "",
               "caption_4_x": 0,
               "caption_4_align": "right",
               "caption_4_y": 0,
               "caption_4_z": 9,
-              "caption_5": "",
               "caption_5_x": 0,
               "caption_5_align": "right",
               "caption_5_y": 0,
               "caption_5_z": 9,
-              "caption_6": "",
               "caption_6_x": 0,
               "caption_6_align": "right",
               "caption_6_y": 0,
@@ -404,8 +391,8 @@
               "display": "",
               "grid": "8",
               "linklist1": "footer",
-              "linklist2": "customer-support",
-              "linklist3": "more-about-marco"
+              "linklist2": "",
+              "linklist3": ""
             }
           },
           "1525846819246": {
@@ -423,15 +410,7 @@
           "1525925380941": {
             "type": "payment",
             "settings": {
-              "payments": "",
-              "payment_1": "shopify:\/\/shop_images\/download_a00aa8f9-821e-4742-9ae0-37768a3f7768.png",
-              "payment_2": "shopify:\/\/shop_images\/download-1_3ffce575-0415-4e8e-bc36-1b260e278478.png",
-              "payment_3": "shopify:\/\/shop_images\/download-2_c72b6a0b-80c8-4782-b914-0f3a68b040b3.png",
-              "payment_4": "shopify:\/\/shop_images\/download-3_126f034e-8cab-4315-85df-6ac2283b1fac.png",
-              "payment_5": "shopify:\/\/shop_images\/download-4_91a995a7-7e95-4c19-879e-e13d683b0606.png",
-              "security_1": "shopify:\/\/shop_images\/download-5_c7ec6e0d-44d1-4ea0-8b5b-0c265fbe5838.png",
-              "security_2": "shopify:\/\/shop_images\/download-6_72286897-ac36-45f6-aae7-3b3df52a4a49.png",
-              "security_3": ""
+              "payments": ""
             }
           }
         },
@@ -448,17 +427,15 @@
           "1525836288408": {
             "type": "item",
             "settings": {
-              "banner": "shopify:\/\/shop_images\/banner-left.jpg",
               "title": "Electronics",
-              "linklist": "electronics"
+              "linklist": ""
             }
           },
           "1525836304892": {
             "type": "item",
             "settings": {
-              "banner": "shopify:\/\/shop_images\/banner-right.jpg",
               "title": "Accessories",
-              "linklist": "electronics"
+              "linklist": ""
             }
           }
         },
@@ -477,7 +454,6 @@
           "display": "show-for-large",
           "title": "Top Sale in this week",
           "sub_title": "Best Selling",
-          "bkg": "shopify:\/\/shop_images\/banner-topsale_3d32a19f-9346-41cb-ad12-d6201d7602b7.jpg",
           "collection": "top-sale",
           "limit": "10",
           "autoplay": false,
@@ -520,7 +496,6 @@
             "settings": {
               "title": "Women",
               "row": "3",
-              "bg": "",
               "bg_width": 500,
               "bg_height": 500
             }
@@ -530,11 +505,10 @@
             "settings": {
               "title": "Women",
               "link_list": "",
-              "link_list_col": "whomen-child-menu",
+              "link_list_col": "",
               "product": "",
               "article": "",
               "html": "",
-              "image": "shopify:\/\/shop_images\/gadget-instagram-1.jpg",
               "image_link": ""
             }
           }
@@ -544,10 +518,8 @@
           "1526030368134"
         ],
         "settings": {
-          "logo": "shopify:\/\/shop_images\/logo.png",
-          "logo_mobile": "shopify:\/\/shop_images\/logo.png",
-          "welcome_message": "Get 60% off sale everything + free shipping <a href=\"\/collections\/all\">See Details<\/a>",
-          "navigation": "top-navigation",
+          "welcome_message": "Get 60% off sale everything + free shipping <a href=\"/collections/all\">See Details</a>",
+          "navigation": "",
           "link_list": "main-menu",
           "header_sticky": true
         }
@@ -559,7 +531,6 @@
             "type": "collection",
             "settings": {
               "collection": "top-sale",
-              "image": "shopify:\/\/shop_images\/banner-top-1.jpg",
               "title": "",
               "style": "dark",
               "action_text": "",
@@ -576,7 +547,6 @@
             "type": "collection",
             "settings": {
               "collection": "what-new",
-              "image": "shopify:\/\/shop_images\/banner-top-2.jpg",
               "title": "",
               "style": "dark",
               "action_text": "",
@@ -593,7 +563,6 @@
             "type": "collection",
             "settings": {
               "collection": "top-sale",
-              "image": "shopify:\/\/shop_images\/banner-top-3.jpg",
               "title": "",
               "style": "dark",
               "action_text": "",
@@ -610,7 +579,6 @@
             "type": "collection",
             "settings": {
               "collection": "what-new",
-              "image": "shopify:\/\/shop_images\/banner-top-4.jpg",
               "title": "",
               "style": "dark",
               "action_text": "",
@@ -627,7 +595,6 @@
             "type": "collection",
             "settings": {
               "collection": "top-sale",
-              "image": "shopify:\/\/shop_images\/banner-top-5.jpg",
               "title": "",
               "style": "dark",
               "action_text": "",
@@ -661,49 +628,49 @@
           "1537953638114": {
             "type": "photo",
             "settings": {
-              "image": "https:\/\/www.instagram.com\/p\/BovsFx0hhV4"
+              "image": "https://www.instagram.com/p/BovsFx0hhV4"
             }
           },
           "1537953640426": {
             "type": "photo",
             "settings": {
-              "image": "https:\/\/www.instagram.com\/p\/BovsD1DhRIR"
+              "image": "https://www.instagram.com/p/BovsD1DhRIR"
             }
           },
           "1537953641690": {
             "type": "photo",
             "settings": {
-              "image": "https:\/\/www.instagram.com\/p\/BovsBUMhmWL"
+              "image": "https://www.instagram.com/p/BovsBUMhmWL"
             }
           },
           "1537953643834": {
             "type": "photo",
             "settings": {
-              "image": "https:\/\/www.instagram.com\/p\/Bovr-5ehVay"
+              "image": "https://www.instagram.com/p/Bovr-5ehVay"
             }
           },
           "1537953645182": {
             "type": "photo",
             "settings": {
-              "image": "https:\/\/www.instagram.com\/p\/Bovr8k9BPeE"
+              "image": "https://www.instagram.com/p/Bovr8k9BPeE"
             }
           },
           "1537953647378": {
             "type": "photo",
             "settings": {
-              "image": "https:\/\/www.instagram.com\/p\/Bovr4o1hTx0"
+              "image": "https://www.instagram.com/p/Bovr4o1hTx0"
             }
           },
           "1537953648514": {
             "type": "photo",
             "settings": {
-              "image": "https:\/\/www.instagram.com\/p\/Bovr1f_h7uW"
+              "image": "https://www.instagram.com/p/Bovr1f_h7uW"
             }
           },
           "1537953650498": {
             "type": "photo",
             "settings": {
-              "image": "https:\/\/www.instagram.com\/p\/BovryC9hMXv"
+              "image": "https://www.instagram.com/p/BovryC9hMXv"
             }
           }
         },
@@ -738,49 +705,42 @@
           "1526376351343": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/download.png",
               "link": ""
             }
           },
           "1526376368146": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/download-1.png",
               "link": ""
             }
           },
           "1526376378749": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/download-2.png",
               "link": ""
             }
           },
           "1526376389613": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/download-3.png",
               "link": ""
             }
           },
           "1526376399528": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/download-4.png",
               "link": ""
             }
           },
           "1526376409261": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/download-5.png",
               "link": ""
             }
           },
           "1526376417238": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/download-6.png",
               "link": ""
             }
           }
@@ -824,8 +784,7 @@
           "1526547467400": {
             "type": "banner",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner-sale.jpg",
-              "link": "shopify:\/\/collections",
+              "link": "shopify://collections",
               "action_text": "",
               "column_small": "12",
               "column_medium": "12",
@@ -930,10 +889,10 @@
               "title": "Banner Left Sidebar",
               "position": "left_sidebar",
               "display": "",
-              "image": "shopify:\/\/shop_images\/gadget-instagram-1.jpg",
+              "image": "shopify://shop_images/gadget-instagram-1.jpg",
               "image_width": 1000,
               "image_height": 1000,
-              "link": "shopify:\/\/collections"
+              "link": "shopify://collections"
             }
           },
           "1526889498386": {
@@ -942,10 +901,10 @@
               "title": "Banner Top Content",
               "position": "top_content",
               "display": "show-for-large",
-              "image": "shopify:\/\/shop_images\/banner-slider-3.jpg",
+              "image": "shopify://shop_images/banner-slider-3.jpg",
               "image_width": 1920,
               "image_height": 770,
-              "link": "shopify:\/\/collections"
+              "link": "shopify://collections"
             }
           },
           "1531796361491": {
@@ -987,7 +946,7 @@
           "phone": "+84 1800 585 678",
           "fax": "",
           "map_enable": true,
-          "map_caption": "<iframe src=\"https:\/\/maps.google.com\/maps?q=eiffel%20paris&hl=en-gb&t=m&z=15&output=embed\" class=\"map width-100\" height=\"350\"><\/iframe>"
+          "map_caption": "<iframe src=\"https://maps.google.com/maps?q=eiffel%20paris&hl=en-gb&t=m&z=15&output=embed\" class=\"map width-100\" height=\"350\"></iframe>"
         }
       },
       "about-template": {
@@ -1025,7 +984,7 @@
         ],
         "settings": {
           "video_enable": true,
-          "video_caption": "<iframe width=\"100%\" height=\"600\" src=\"https:\/\/www.youtube.com\/embed\/_9VUPq3SxOc\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"\"><\/iframe>"
+          "video_caption": "<iframe width=\"100%\" height=\"600\" src=\"https://www.youtube.com/embed/_9VUPq3SxOc\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"\"></iframe>"
         }
       },
       "blog-template": {
@@ -1112,7 +1071,7 @@
               "title": "",
               "position": "left_sidebar",
               "display": "",
-              "image": "shopify:\/\/shop_images\/gadget-instagram-1.jpg",
+              "image": "shopify://shop_images/gadget-instagram-1.jpg",
               "image_width": 270,
               "image_height": 405,
               "link": ""
@@ -1190,7 +1149,7 @@
             "type": "collection-tab",
             "settings": {
               "title": "Custom tab",
-              "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>"
+              "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
             }
           }
         },
@@ -1245,10 +1204,19 @@
         "settings": {
           "cart_notes_enable": true
         }
+      },
+      "intro_TJRwYr": {
+        "type": "intro",
+        "settings": {
+          "title": "Custom Intro Section",
+          "subtitle": "Type subtitle here",
+          "blurb": "I am a custom created section"
+        }
       }
     },
     "content_for_index": [
       "1523930784302",
+      "intro_TJRwYr",
       "1526268792542",
       "1537947537946",
       "1525836266371",
@@ -1344,10 +1312,6 @@
             "layout": "grid"
           }
         },
-        "1492033809691": {
-          "type": "map",
-          "settings": {}
-        },
         "blog-template": {
           "type": "blog-template",
           "settings": {}
@@ -1367,9 +1331,7 @@
           }
         }
       },
-      "content_for_index": [
-        "1492033809691"
-      ]
+      "content_for_index": []
     }
   }
 }
