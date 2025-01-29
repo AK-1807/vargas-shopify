@@ -1,0 +1,89 @@
+<!-- sections/Col-Three-Cards.liquid -->
+<section class="featured-products">
+  <div class="container">
+    <div class="introduction">
+      <h2>{{ section.settings.section_title }}</h2>
+    </div>
+
+    <div class="wrapper">
+      {%- for block in section.blocks -%}
+        <div class="card col-three slick-slide slick-current slick-active" tabindex="0" style="width: 383px;" data-slick-index="0" aria-hidden="false">
+          <a href="{{ card_link }}" class="redirect-link" target="_blank"></a>
+              <div class="card-image">
+                          <img loading="eager" src="{{ block.card_image | img_url: "medium" }}" width="480" height="387" alt="Kontainer image">
+              </div>
+              <div class="card-content">
+                <h3>{{ block.title }}</h3>
+                <p>{{ block.card_description }}</p>
+                <a href="{{ card_link }}" class="arrow-btn" tabindex="0" target="_blank">Read More</a>
+              </div>
+              
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+   
+    
+    
+    {% if section.settings.show_products %}
+    {% else %}
+      <p>No products found.</p>
+    {% endif %}
+  </section>
+  
+
+{% schema %}
+{
+  "name": "Col Three Cards",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Title"
+    },
+    {
+      "type": "text",
+      "label": "section title",
+      "id": "section_title",
+      "default": ""
+    },
+  ],
+  "blocks": [
+    {
+      "name": "Card",
+      "type": "Image",
+      "settings":[
+        {
+          "type": "image_picker",
+          "id": "card_image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "label": "Title",
+          "id": "title",
+          "default": "This is the title for Card"
+        },
+        {
+          "type": "textarea",
+          "label": "Description",
+          "id": "card_description",
+          "default": "This is the description for Card 1."
+        },
+        {
+          "type": "url",
+          "label": "Card Link",
+          "id": "card_link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Col Three Cards",
+      "category": "Custom Sections"
+    }
+  ],
+}
+{% endschema %}
+  
+  
